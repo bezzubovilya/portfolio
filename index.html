@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link type="text/css" href="materialize/css/materialize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+        }
+        
+        .qw {
+            border: 3px solid darkgreen;
+            opacity: 0.7;
+            text-align: center;
+            width: 300px;
+            margin: auto;
+            margin: 0;
+        }
+        
+        h4 {
+            color: white
+        }
+        
+        .q {
+            font-size: 25px;
+        }
+        
+        a {
+            font-size: 25px;
+            color: white;
+        }
+
+    </style>
+</head>
+<div class="slider fullscreen">
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="#!">Способности</a></li>
+        <li><a href="#!">О себе</a></li>
+        <li><a href="#!">Резюме</a></li>
+        <li class="divider">Портфолио</li>
+        <li><a href="#!">Как связаться</a></li>
+        <li><a class="dropdown-up" href="#!" data-activates="dropdown1"><i class="material-icons center">arrow_drop_up</i></a></li>
+    </ul>
+
+    <ul class="slides">
+        <li>
+
+            <img src="portf/ban2.jpg">
+            <div class="caption left white-text">
+                <h3>О себе </h3>
+                <h5 class="light white-text ">Начинающий программист</h5>
+                <snap class="<red-text></red-text>">Являюсь учеником СОШ МОБУ. <br>Увлекаюсь музыкой,спортивным ориентированием,баскетболом,изучаю английский язык и состою в ансамбле школы.
+                </snap><br>
+               <div class="qw"> <a href="portf/ind.html" class="link">Узнать больше</a></div>
+            </div>
+        </li>
+        <li>
+            <img src="portf/banner.jpg">
+            <div class="caption right-align">
+                <h3>Нет ещё стоящих язнаний,но есть уже опыт</h3>
+                <div class="row">
+                    <div class="col s6">
+                    <i class="material-icons">games</i>
+                    <a href="portf/game/index.html" class="brand-logo">Игра на Phaser</a>
+                    </div>
+                </div>
+               <div class="divider">    </div>
+            </div>
+        </li>
+        <li>
+            <img src="portf/ban3.jpg">
+            <div class="caption right-align">
+                <h3>Так как я являюсь активистом,то у меня есть различные грамоты и сертификаты</h3>
+                <a href="portf/about.html" class="link">Развернуть</a>
+            </div>
+        </li>
+    </ul> 
+</div>
+
+<body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="materialize/js/materialize.js"></script>
+    <script>
+        $('.collapsible').collapsible('open', 0);
+        $('.collapsible').collapsible('close', 0);
+        $('.collapsible').collapsible('destroy');
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+        });
+        $(document).ready(function() {
+            $(".button-collapse").sideNav();
+            $('.slider').slider();
+        })
+        $(document).ready(function() {
+            $('.parallax').parallax();
+        });
+
+        $(".dropdown-button").dropdown();
+
+    </script>
+</body>
+
+</html>
